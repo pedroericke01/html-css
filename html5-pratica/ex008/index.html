@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>
+        Esse video está hospedado localmente em minha máquina, existem ao todo 4 formatos de videos
+        utilizados pela internet visando a compatibilidade da mídia com os diversos dispositivos e
+        plataformas utilizados pelos usuários.
+    </p>
+
+    <h2>Formatos de videos na internet</h2>
+    <ul type="square">
+        <li>MP4</li>
+        <li>M4V</li>
+        <li>WEBM</li>
+        <li>OGV</li>
+    </ul>
+    <!--Os comandos:'controls' e 'loop' são importantes quando trabalhamos com videos.
+    1-o comando 'controls' permite controlar a inicializaçaõ do video quando o usuário clicar em play.
+    
+    2-o comando 'loop' permite a inicialização automática do video(depois que o usuário inicializa
+    o mesmo pela primeira vez) ao invés de finalizar por padrão(tempo de video chegar a 0).
+    exemplo disso são so videos que sempre estão se repetindo em loop e não acabam.
+    
+    3-Essa é a maneira básica de utilizar vídeos com tags html, em websites profissionais
+    não utilizamos esse modelo de declração simples, mais sim o avançado. observe abaixo o modelo
+    de delcaração simples:-->
+    
+    <video src="videos/video-praia-(1920x1080_50fps).webm" width="500" controls loop></video>
+
+</body>
+</html>

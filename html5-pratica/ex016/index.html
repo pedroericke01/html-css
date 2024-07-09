@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: grey;
+        }
+        header{
+            color: black;
+            background-color: white;
+            height: 95px;  
+            margin-bottom: 15px; 
+        }
+        nav{
+            background-color: rgb(77, 76, 76);
+            color: white;
+            margin: 8px;
+            padding:3px;
+        }
+        nav > a{
+            color: white;
+            text-decoration: none;
+            margin: 5px 10px 5px 10px;
+        }
+        main{
+            background-color: white;
+            height: 400px;
+            padding-top: 10px;
+        }
+        section{
+            background-color:darkgray ;
+            margin: 5px 15px 5px 15px;
+            padding: 15px;
+
+        }
+        section > p{
+            padding: 8px 10px 8px 10px;
+        }
+       a{
+        text-decoration: none;
+        color: white;
+       }
+       footer{
+        background-color: black;
+        color: white;
+        text-align: center;
+        margin-top: 15px;
+        padding:2px;
+       }
+
+       a:hover{
+        text-decoration: underline;
+       }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Aprendendo Grouping Tags</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">link1</a>
+            <a href="#">link2</a>
+            <a href="#">linnk3</a> 
+        </nav>
+
+    </header>
+    
+    <main>
+
+        <section>
+            <h1>Grouping Tags(tags Semânticas para agrupamento)</h1>
+
+            <p>
+                A tag 'header' é uma Grouping Tag(tag para agrupamento de outras tags)
+                utilizada para exibir o cabeçalho de um website, menus, logo do website
+                , em resumo, tudo o que representa o cabeçalho do website.
+            </p>
+
+            <p>
+                A tag 'nav', inserida dentro da Tag 'header', tambem é uma grouping tag que permite utilizar todo o sistema
+                utilizada para a navegação dentro do próprio website
+            </p>
+
+            <p>
+                a tag 'main' posicionada abaixo da tag 'header' permite exibir o
+                conteúdo principal do website.
+            </p>
+
+            <p>
+                A tag 'Footer' posicionada abaixo da tag 'main' permite exibir o rodapé
+                do website
+            </p>
+
+            <p>Website desenvolvido por <strong><a href="https://www.instagram.com/pedro.ericke/" target="_blank" rel="external">pedro.ericke</a></strong></p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>
+            Desenvolvido por <strong><a href="https://www.instagram.com/pedro.ericke/" target="_blank" rel="external">Pedro Ericke</a></strong>
+        </p>
+    </footer>
+</body>
+</html>

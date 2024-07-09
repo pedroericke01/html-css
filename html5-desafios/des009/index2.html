@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade em Sites</title>
+    <style>
+        img{
+            background-color: gainsboro;
+            width: 90%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo Sobre Responsividade em HTML5</h1>
+
+    <!--
+    nessa imagem, quando diminuimos o tamanho do navegador para width:807px e
+    height:608px, sofrerá a quebra de imagem, isso é, a rolagem da barra inferior
+    será exibida.
+    1-podemor redimensionar essa imagem de duas maneiras:
+    
+    1°-encapsulando essa imagem nas tags:picture(que no caso de o tamanho da tela
+    do navegador diminuir até certo ponto, outra versão "menor" dessa imagem será
+    exibida na tela) a partir da seguinde tag:
+    
+    <source media = "(max-width:tam_max_para-quebra-de imagem) srcset="endereço
+    da imagem (pequena) no diretório">
+    <img src="endereço-imagem-tamanho-normal">
+
+    2°estilizar com css que a imagem vai ocupar 100% do width de seu respectivo
+    bloco(inline/block), dessa maneira, mesmo que o tamanho em px do navegador
+    diminua, a imagem vai se adaptar automaticamente.
+    vamos utilizar a mesma tecnica acima(primeira) em conjunto com essa 2, onde
+    quando a imagem ficar muito pequena de se visualizar, sua outra versão(menor)
+    deverá ser exibida:
+    -->
+
+    <picture>
+        <source media="(max-width:765px)" srcset="imagens/dan-droids-pq.png">
+        <img src="imagens/dan-droids.png" alt="dandroid-imagem">
+    </picture>
+    
+</body>
+</html>
