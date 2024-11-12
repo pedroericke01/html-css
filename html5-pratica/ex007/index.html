@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+
+    <p>
+        São conteúdos que permitem a adaptação dessas mídias em diferentes plataformas e
+        dispositivos com diferentes tamanhos de tela. Esses conteúdos devem se adaptar aos
+        diferentes tipos de dispositvos do público principal na internet.
+    </p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagem-pequena.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/imagem-media.png" type="image/png">
+        <img src="imagens/imagem-grande.png" alt="imagem-flexivel">
+    </picture>
+    
+    <h2>Trabalhando com Audios no HTML5</h2>
+    
+    <audio src="audios/Hyperfun - Kevin MacLeod.mp3" controls preload="metadata"></audio>
+
+</body>
+</html>

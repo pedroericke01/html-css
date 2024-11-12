@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/* Color Theme Swatches in Hex:
+.the-robert-1-hex { color: #E5E5E5; }
+.the-robert-2-hex { color: #EADBC6; }
+.the-robert-3-hex { color: #E9AD63; }
+.the-robert-4-hex { color: #264775; }
+.the-robert-5-hex { color: #0D1827; }
+*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: linear-gradient(to top,#E9AD63, #EADBC6 );
+    background-attachment: fixed;
+}
+
+main{
+    width: 600px;
+    box-shadow: 5px 5px 3px #0D1827;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #E5E5E5;
+    margin: auto;
+}
+
+h1{
+    color: #E9AD63;
+    text-shadow:1px 1px 1px #0D1827;
+    text-align: center;
+}
+h2{
+    color: #264775;
+}
+p{
+    text-align: justify;
+}

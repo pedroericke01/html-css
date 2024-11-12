@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>
+        Esse video está hospedado localmente em minha máquina, existem ao todo 4 formatos de videos
+        utilizados pela internet visando a compatibilidade da mídia com os diversos dispositivos e
+        plataformas utilizados pelos usuários.
+    </p>
+
+    <h2>Formatos de videos na internet</h2>
+    <ul type="square">
+        <li>MP4</li>
+        <li>M4V</li>
+        <li>WEBM</li>
+        <li>OGV</li>
+    </ul>
+    
+   <!--Essa é a maneira avançada de utilizar vídeos com tags html5, pois em websites profissionais
+    utilizamos o modelo de declaração avançado visando a compatibilidade dos formatos da mídia com
+    os dispositivos dos usuários da internet. observe abaixo o modelo
+    de delcaração avançada:-->
+    
+    <!--o método 'poster' permite colocar uma foto de capa para o vídeo antes que o usuário clique
+    em play, visando chamar a atençaõ do mesmo e deixar o website mais elegante.
+    OBS:todo poster deve ser do tamanho original em px da mídia onde o mesmo será colocado, exemplo:
+    o poster para as mídias abaixo mede:1920x1080px ao todo.-->
+    
+    <video width="600" poster="poster/poster-praia.png" controls loop>
+        <source src="videos/video-praia-(1920x1080_50fps).mp4" type="video/mp4">
+        <source src="videos/video-praia-(1920x1080_50fps).m4v" type="video/mp4">
+        <source src="videos/video-praia-(1920x1080_50fps).webm" type="video/webm">
+        
+        <!--No caso de nenhum desses formatos funcionar no navegado do usuário, então o paragrafo
+        abaixo será exibido para o mesmo-->
+        <p>Seu navegador não tem suporte para a reprodução de videos.</p>
+    
+    </video>
+</body>
+</html>
