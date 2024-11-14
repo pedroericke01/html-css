@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 17</title>
+    <!-- aplicando estilo css interno: -->
+    <style>
+        body{
+            /* aplicando a imagem de fundo em todo meu website: */
+            background-image: url("imagens/wallpaper001.jpg");
+        }
+        div.caixa{
+            display: inline-block;
+            border-width: 2px;
+            border-style: solid;
+            border-color: black;
+            border-radius: 10px;
+            width: 300px;
+            height: 300px;
+        }
+        /* maneiras de se aplicar imagens de fundo: */
+        div#c1{
+            /* maneira básica: */
+            background-color: lightblue;
+        }
+
+        div#c2{
+            /* maneira 2 com degradê: */
+            background-image: linear-gradient(to bottom, yellow, red);
+        }
+        
+        div#c3{
+            /* maneira 3 com imagem de fundo: */
+            background-image: url('imagens/pattern003.png');
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Aprendendo a colocar imagens de fundo em elementos do html</h1>
+
+    <div class="caixa" id="c1"></div>
+
+    <div class="caixa" id="c2"></div>
+    
+    <div class="caixa" id="c3"></div>
+
+</body>
+</html>
