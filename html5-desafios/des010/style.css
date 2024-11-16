@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+/* importando 2 fontes do googleFonts: */
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap");
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* definindo variáveis globais do estilo: */
+:root{
+    --fonte-padrao:Verdana, Tahoma, sans-serif;
+    --fonte-destaque:"Passion One", sans-serif;
+    --fonte-escrita:"Sriracha", sans-serif;
+}
+
+body{
+    font-family: var(--fonte-padrao);
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    text-align: justify;
+}
+
+header{
+    min-height: 180px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    box-shadow: 1px 2px 2px black;
+}
+header > h1{
+    font-size: 8vw;
+    padding-top: 25px; 
+    font-family: var(--fonte-destaque);
+}
+header >p{
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+header > p > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+header > p > a:hover{
+    text-decoration: underline;
+}
+
+section{
+    /* maneira não muito recomendada para redimensionar a página web: */
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
+.normal > aside > p{
+    max-width: 560px;
+    /* maneira não muito recomendada para redimensionar elementos na web: */
+    font-size: 3vw;
+    
+    margin: 45px;
+    font-family: var(--fonte-escrita);
+
+}
+
+#com-imagem1{
+    background-image: url("imagens/background001.jpg");
+    background-position: right center;
+    background-color: black;
+    
+    box-shadow: inset 2px 2px 2px black ;
+
+    background-attachment: fixed;
+    background-size:cover;
+    min-height: 630px;
+}
+
+.caixa-poema{
+    max-width: 560px;
+    padding: 40px;
+    margin-top: 55px;
+    background-color: rgba(0, 0, 0, 0.359);
+}
+.poema{  
+    font-family: var(--fonte-escrita);
+    color: white;
+    text-shadow: 1px 2px 2px black;
+
+    /* maneira não muito recomendada para redimensionar elementos na web: */
+    font-size: 3vw;
+}
+
+#com-imagem2{
+    background-image: url("imagens/background002.jpg");
+    background-position: right center;
+    background-color: black;
+
+    box-shadow:inset 1px 1px 2px black;
+
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 630px;
+}
+
+footer{
+    background-color: black;
+    padding: 8px;
+    text-align: center;
+}
+footer > p{
+    color: white;
+    font-size: 18px;
+}
+footer > p > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+footer > p > a:hover{
+    text-decoration: underline;
+}
