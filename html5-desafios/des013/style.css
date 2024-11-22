@@ -60,10 +60,10 @@ section#telefone{
     /* posicionando a imagem de fundo corretamente dentro da tela do dispositivo: */
     top: 12.9%;
     left: 5%;
-    transform: translatex(-4%);
+    transform: translate(-4%, -0.3%);
     /* definindo um tamanho para o iframe ser visível pelos usuários visitantes: */
     width: 268px;
-    height: 471px;
+    height: 472px;
     background-image: url("imagens/tela-home.jpg");
     background-repeat: no-repeat;
     background-size: cover;
