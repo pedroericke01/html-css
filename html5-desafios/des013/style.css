@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+body{
+    background-color: black;
+    background-image:url("imagens/fundo-madeira.jpg");
+    /* a imagem vai cobrir 100% da tela, mesmo se a tela for pequena: */
+    background-size: cover;
+    /* fixei o tamanho da imagem, isso vai impedir que existam reflexos da imagem, no
+    caso de a imagem acabar, não haverão repetições dessa imagem: */
+    background-attachment: fixed;
+    position: relative;
+    width: 98vw;
+    height: 100vh;
+}
+
+section#redes-sociais{
+    padding: 25px;
+}
+#navegacao > a{
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    margin-bottom: 22px;
+}
+#navegacao img{
+    width: 55px;
+    border-radius:31px 31px;
+    box-shadow: 1px 1px 1px black;
+}
+#navegacao img:hover{
+    box-shadow: 1px 2px 2px black;
+    transform: translatex(-20px);
+    transition: 0.6s;
+
+}
+section#telefone{
+    min-width: 650px;
+    background-image: url("imagens/frame-iphone.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    /* adicionando posicionamento do elemento: */
+    top: 53%;
+    left: 57%;
+    /* centralizando o elemento no meio da tela, considerando os eixos x e y: */
+    transform: translate(-38%, -50%);
+    width: 311px; 
+    height: 627px;
+
+}
+
+#telefone > iframe{
+    position: absolute;
+    /* posicionando a imagem de fundo corretamente dentro da tela do dispositivo: */
+    top: 12.9%;
+    left: 5%;
+    transform: translatex(-4%);
+    /* definindo um tamanho para o iframe ser visível pelos usuários visitantes: */
+    width: 268px;
+    height: 470px;
+    background-image: url("imagens/tela-home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
