@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/* unindo todas as media feature em apenas 1 folha de estilo css.
+Essa é uma estratégia recomendada para pequenos projetos: */
+
+/* media type generica, que me permite aplicar um estilo css para qualquer tipo
+de media existente: */
+@media all{
+    *{
+        margin:0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    html, body{
+        width: 100vw;
+        height: 100vh;
+        background-color: #233eff;
+        color: white;
+        /* configurando a imagem de fundo que meu site vai receber independente
+        da imagem, essa propriedade será a mesma: */
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+/* media type para criar estilo css para 'telas' de dispositivos no momento que 
+essas estão de pé: */
+@media screen and (orientation: portraint){
+    body{
+        background-image: url(../imagens/cev-portrait.jpg);
+        background-position: center bottom;
+    };
+}
+
+/* media type para criar estilo css para 'telas de dispositivos no momento que essas
+estão deitadas:' */
+@media screen and (orientation: landscape){
+    body{
+        background-image: url("../imagens/cev-landscape.jpg");
+        background-position: center bottom;
+    }
+}

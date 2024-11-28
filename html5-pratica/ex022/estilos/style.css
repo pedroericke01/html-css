@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/* Estilização Genérica do site, vale para todos os tipos de média: */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #233eff;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+h1{
+    color: white;
+    font-size: 32px;
+}
