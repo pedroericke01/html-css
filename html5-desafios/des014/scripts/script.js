@@ -1,6 +1,6 @@
  /* ligando as 2 principais tags que meu script precisa para funcionar: */
     const opcoes = window.document.querySelector('header > nav');
-    const botao = window.document.querySelector('header > input[type=button]');
+    const botao = window.document.querySelector('header > span');
 
     /* criando variáve contadora de cliques que me permitirá controlar a exibição e
     ocultar a lista de opções de links disponíveis no front end: */
