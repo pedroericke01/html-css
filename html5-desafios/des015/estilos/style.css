@@ -51,9 +51,10 @@ main{
 }
 main > #caixa{
     position: absolute;
-    left: 50%;
     top: 50%;
-    transform: translate(-20%, -45%);
+    left: 50%;
+    transform: translate(-28%, -45%);
+
     width: 320px;
     height: 490px;
     border-radius: 20px;
