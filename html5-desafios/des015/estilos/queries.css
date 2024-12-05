@@ -17,7 +17,8 @@ Grandes-telas: Acima de 1281px
     }
     main > #caixa{
         width: 80vw;
-        height: 440px;
+        height: 440px;   
+        transform: translate(-32%, -42%);
     }
     #caixa > #caixa-imagem{
         float: left;
@@ -68,6 +69,7 @@ Grandes-telas: Acima de 1281px
     main > #caixa{
         width: 90vw;
         height: 440px;
+        transform: translate(-33%, -43%);
     }
     #caixa > #caixa-imagem{
         float: right;
@@ -117,9 +119,9 @@ Grandes-telas: Acima de 1281px
     }
 
     main > #caixa{ 
-        left: 59%;
         width: 90vw;
         height: 440px;
+        transform: translate(-33%, -43%);
     }
     #caixa > #caixa-imagem{
         float: right;
@@ -148,7 +150,9 @@ Grandes-telas: Acima de 1281px
     }
     #caixa > form > input{
         width: 85%;
-        transform: translateY(-5px);
+
+        transform: translateY(-10px);
+        
         padding: 10px;
         margin-bottom: 10px;
     }
