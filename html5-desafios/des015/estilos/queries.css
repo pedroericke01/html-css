@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+/* Devise BreakPoints:
+
+pequenas-telas: 320px0 até 600px;
+Celular: 601px até 768px
+
+tablets: 769px até 991px
+Desktop: 992px até 1280px
+Grandes-telas: Acima de 1281px
+*/
+
+/* Media Feature para Tablets: */
+@media screen and (min-width:769px) and (max-width:991px){
+    body{
+        background-image: linear-gradient(to bottom, #008C72, #003840);
+    }
+    main > #caixa{
+        width: 80vw;
+        height: 440px;
+    }
+    #caixa > #caixa-imagem{
+        float: left;
+        width: 30%;
+        height: 100%;
+        margin-right: 10px;
+        box-shadow: 0.5px 0.5px 2px black;
+    }
+    #caixa > h2{
+        margin-top: 65px;
+        font-size: 27px;
+    }
+    #caixa > p{
+        font-size: 15px;
+    }
+    #caixa > form{
+        float: right;
+        width: 68.3%;
+    }
+
+    form > label{
+        position: relative;
+    }
+    form > label > .material-symbols-outlined{
+        padding: 7px;
+        margin-left: 12px;
+    }
+    #caixa > form > input{
+        width: 76%;
+        transform: translateY(-5px);
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    #caixa > form > .botoes{
+        width: 91%;
+        margin:5px 15px;
+        padding: 8px;
+        font-size: 18px;
+    }
+
+}
+
+/* Media Feature para Desktop: */
+@media screen and (min-width:992px) and (max-width:1280px){
+    body{
+        background-image: linear-gradient(to bottom, #008C72, #003840);
+    }
+    main > #caixa{
+        width: 90vw;
+        height: 440px;
+    }
+    #caixa > #caixa-imagem{
+        float: right;
+        width: 40%;
+        height: 100%;
+        margin-left: 10px;
+        box-shadow: 0.5px 0.5px 2px black;
+    }
+    #caixa > h2{
+        margin-top: 65px;
+        font-size: 30px;
+    }
+    #caixa > p{
+        font-size: 18px;
+    }
+    #caixa > form{
+        float: left;
+        width: 58.8%;
+    }
+
+    form > label{
+        position: relative;
+    }
+    form > label > .material-symbols-outlined{
+        padding: 9px;
+        margin-left: 18px;
+    }
+    #caixa > form > input{
+        width: 78%;
+        transform: translateY(-5px);
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    #caixa > form > .botoes{
+        width: 92%;
+        margin:5px 25px;
+        padding: 8px;
+        font-size: 18px;
+    }
+
+}
+
+/* media feature para grandes telas: */
+@media screen and (min-width: 1281px){
+    body{
+        background-image: linear-gradient(to bottom, #008C72, #003840);
+    }
+    main > #caixa{
+        width: 95vw;
+        height: 440px;
+    }
+    #caixa > #caixa-imagem{
+        float: right;
+        width: 45%;
+        height: 100%;
+        margin-left: 10px;
+        box-shadow: 0.5px 0.5px 2px black;
+    }
+    #caixa > h2{
+        margin-top: 65px;
+        font-size: 32px;
+    }
+    #caixa > p{
+        font-size: 19px;
+    }
+    #caixa > form{
+        float: left;
+        width: 54%;
+    }
+    form > label{
+        position: relative;
+    }
+    form > label > .material-symbols-outlined{
+        padding: 9px;
+        margin-left: 20px;
+    }
+    #caixa > form > input{
+        width: 85%;
+        transform: translateY(-5px);
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    #caixa > form > .botoes{
+        width: 94.3%;
+        margin:5px 25px;
+        padding: 8px;
+        font-size: 18px;
+    }
+
+}

@@ -19,7 +19,8 @@ Ultra-telas: minimo: 1441px
     }
     header{
         display: none
-    };
+    }
+    
     main{
         width: 90vw;
         border: none;

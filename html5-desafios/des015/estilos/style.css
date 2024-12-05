@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+/* Paleta de cores:
+    verde-escuro:#007369;
+    verde-azulado:#008C72;
+    verde-parola:#003840;
+
+*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 1px black;
+}
+
+body, html{
+    width: 100vw;
+    height: 100vh;
+    background-color:#007369;
+}
+header{
+    padding: 20px;
+    height: 90px;
+    margin-bottom: 8px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.476);
+    color: white;
+    box-shadow: 1px 1px 2px black;
+}
+header > h1{
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+header > p{
+    font-size: 17px;
+}
+header > p > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+header > p > a:hover{
+    text-decoration: underline;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+main > #caixa{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    width: 320px;
+    height: 490px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 2px black;
+    /* todos os componentes que sairem da borda 
+    vão ficar oculto */
+    overflow: hidden;
+
+    /* animação que controla a transição de largura e altura da minha caixa: */
+    transition: width 0.5s, heith 0.5s;
+}
+#caixa > #caixa-imagem{
+    display: block;
+    background-color: #007369;
+    background-image: url("../imagens/metal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    height: 200px;
+}
+#caixa > h2{
+    text-align: center;
+    font-size: 26px;
+    margin-top: 10px;
+}
+#caixa > p{
+    font-size: 14px;
+    padding: 8px 18px;
+    text-align: justify;
+    text-shadow: none;
+}
+
+#caixa > form{
+    display: block;
+    margin-top: 5px;
+}
+form > label{
+    position: relative;
+}
+form > label > .material-symbols-outlined{
+    padding: 5px;
+    margin-left: 10px;
+    color: white;
+    background-color: #003840;
+    border-radius: 26px;
+    cursor: pointer;
+
+}
+#caixa > form > input{
+    transform: translateY(-5px);
+    width: 250px;
+    padding: 7px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    text-shadow: none;
+}
+#caixa > form > .botoes{
+    width: 290px;
+    margin:4px 20px;
+    padding: 8px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    background-color: white;
+    border-color: #003840;
+    
+}
+#caixa > form > .botoes:hover{
+    background-color: #008C72;
+}
+#caixa > form > input[type="submit"]{
+    background-color:#003740ee;
+}
+#caixa > form > input[type="submit"]:hover{
+    background-color: #008C72;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- utilizando icones do google icons: -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon" />
+    <!-- chamada as media queries da interface: -->
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/queries.css">
+    <!-- chamada ao script, após o carregamento de todo conteúdo html e css: -->
+    <script src="scripts/login.js" defer></script>
+    <title>Desafio 15</title>
+</head>
+<body>
+    <header>
+
+        <h1>Projeto Login</h1>
+        
+        <p>
+            Interface desenvolvida por <a href="https://github.com/pedroericke01" target="_blank" rel="external">pedro.ericke</a> concluindo mais
+            um desafio.
+        </p>
+
+    </header>
+    
+    <main>
+
+        <div id="caixa">
+
+            <div id="caixa-imagem"></div>
+            
+            <h2>Login</h2>
+
+            <p>
+                Seja bem vindo(a) novamente. Faça Login
+                para acessar sua conta e poder fazer as
+                configurações no seu ambiente.
+            </p>
+            
+            <form action="#" method="post" autocomplete="on" id="formulario">
+
+                <label for="email">
+                    <span class="material-symbols-outlined">person</span>
+                </label>
+                <input type="email" name="txt_email" id="email" placeholder="Seu e-mail" autocomplete="email" required >
+            
+                <label for="senha">
+                    <span class="material-symbols-outlined">key</span>
+                </label>
+                <input type="password" name="txt_senha" id="senha" minlength="8" placeholder="Sua senha"  autocomplete="current-password" required>
+                
+                <input type="submit" value="Entrar" class="botoes">
+                <input type="button" value="Esqueci a senha" class="botoes">
+            </form>
+
+        </div>
+
+    </main>
+</body>
+</html>
