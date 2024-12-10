@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* Device Brakpoints:
+telas menores: min:320px max:768px 
+tablets: min:769px max:1024px
+desktops: min:1025px max:1280px
+telas grandes:min:1410px
+*/
+
+@media screen and (min-width:600px){
+    header{
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    header > nav{
+        display: block;
+    }
+    header > nav a{
+        display: inline-block;
+    }
+    header > .material-symbols-outlined{
+        display: none;
+    }
+    main{
+        width: 80vw;
+        height: 75vh;
+    }
+    main > p{
+        text-indent: 25px;
+        padding: 18px;
+    }
+    footer{
+        margin-top: 10px;
+        padding: 10px;
+    }
+}

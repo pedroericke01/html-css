@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: gainsboro;
+    color: black;
+}
+header{
+    padding: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    background-color: gray;
+    box-shadow: 1px 1px 1px black;
+}
+header > h1{
+    text-shadow: 1px 1px 1px black;
+    margin:8px 5px;
+}
+header > nav{
+    display: none;
+}
+header > nav a{
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: block;
+    color: white;
+    background-color: #00000096;
+    transition: all .5s ease-in-out;
+}
+header > nav a:hover{
+    text-decoration: underline;
+    background-color: black;
+}
+header > .material-symbols-outlined{
+    font-size: 28px;
+    padding: 5px;
+    border-radius: 30px;
+    cursor: pointer;
+    border-style: inset;
+    background-color: #00000096;
+    box-shadow: 0px 0px 1px black;
+}
+header > .material-symbols-outlined:hover{
+    background-color: black;
+    border-style: outset;
+}
+main{
+    margin: auto;
+    text-align: justify;
+    width: 80vw;
+    height: 470px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 1px 1px black;
+}
+main > h2{
+    text-align: center;
+    margin: 10px 5px;
+}
+main > p{
+    text-indent: 25px;
+    padding: 5px;
+}
+footer{
+    margin-top: 10px;
+    padding: 8px;
+    text-align: center;
+    background-color: gray;
+    color: white;
+}
+footer > p > a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+}
+footer > p > a:hover{
+    text-decoration: underline;
+}
