@@ -71,18 +71,3 @@ main > p{
     text-indent: 25px;
     padding: 5px;
 }
-footer{
-    margin-top: 10px;
-    padding: 8px;
-    text-align: center;
-    background-color: gray;
-    color: white;
-}
-footer > p > a{
-    text-decoration: none;
-    font-weight: bolder;
-    color: white;
-}
-footer > p > a:hover{
-    text-decoration: underline;
-}
