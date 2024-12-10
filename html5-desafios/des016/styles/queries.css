@@ -27,7 +27,7 @@ telas grandes:min:1410px
     }
     main{
         width: 80vw;
-        height: 75vh;
+       
     }
     main > p{
         text-indent: 25px;
