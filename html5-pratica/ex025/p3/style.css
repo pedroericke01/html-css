@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+div#conteiner{
+    height: 400px;
+
+    background-color: lightgreen;
+    /* essa propriedade display automaticamente vai transformar um elemento em uma
+    caixa flexível e seus itens internos em flex-itens automaticamente.*/
+    display: flex;
+    /* definindo a direção do eixo para alinhamento dos itens dessa caixa flexivel: */
+    flex-direction: row;
+    /* propriedade que permite configurar a ação a ser tomada no momento que pode
+    ocorrer uma quebra de conteúdos dentro do flex-conteiner: */
+    flex-wrap: wrap;
+    /* propriedade para alinhamento dos Flex-itens considerando o 
+    eixo principal(main-axis)*/
+    justify-content: space-around;
+    /* propriedade para allinhamento dos flex-itens considerando o
+    cross-axis, para isso é necessário almentar a altura do flex-conteiner: */
+    align-items: center;
+}
+
+div.itens{
+/*     width: 50px;
+    height:50px; */
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    border-color: black;
+    background-color: lightblue;
+}
